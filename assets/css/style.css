@@ -1,0 +1,131 @@
+/* import K2D */
+@import url('https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+/* import kalam */
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+/* import prosto one */
+@import url('https://fonts.googleapis.com/css2?family=Prosto+One&display=swap');
+/* import raleway */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* config globais */
+* {
+    color: white;
+    text-decoration: none;
+}
+/* config background */
+body {
+    height: 555px;
+    background: url(../image/background-formas/triangulos-background-alpha.png), url(../image/background-formas/quadrado-background-alpha.png), linear-gradient(to top, #000000, #080002, #0f0006, #14000a, #18000e);
+    background-repeat: no-repeat;
+    background-position: right bottom, left top;
+    background-origin: content-box;
+
+}
+/* config header */
+header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+}
+/* config nav */
+header h1 {
+    margin-left: 50px;
+    align-items: center;
+    width: 80%;
+    font: normal 20px "K2D", sans-serif;
+}
+
+header nav {
+    display: inline-flex;
+    width:80%;
+    justify-content: end;
+    align-items: center;
+    list-style: none;
+}
+
+ul {
+    display: inline-flex;
+    font: italic bold 18px "Kalam", sans-serif;
+    list-style: none;
+}
+
+nav li {
+    margin-right: 50px;
+}
+
+.nav-tag {
+    color: #E4118F;
+}
+/* ---------------------------------------------------- */
+/* section inicial */
+.inicial {
+    height: 100%;
+    width: 100%;
+    margin-top: 100px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    gap: 1px 10px;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, 100px);
+    width: 100%;
+    height: 100%;
+    
+}
+
+.inicial img {
+    /* estilo */
+    clip-path: circle();
+    /* posicionamento */
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    justify-self: end;
+    align-self: center;
+}
+
+.inicial h1 {
+    /* posicionamento e tamanho */
+    margin: 0px;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    justify-self: start;
+    align-self: end;
+    /* estilo */
+    font: normal 60px "Prosto+One", sans-serif;
+    letter-spacing: 3px;
+    text-align: start;
+    vertical-align: bottom;
+    
+}
+
+#desenvolvedor {
+    background-image: linear-gradient(to right, #5B0BAD, #E4118F);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+#web {
+    /* estilo */
+    color: #D5ACFF;
+    font-size: 26px;
+    font-weight: bold;
+    /* posicionamento e alinhamento */
+    vertical-align: 73%;
+    text-align: start;
+}
+
+.inicial p {
+    /* posicionamento e alinhamento */
+    margin: 0px;
+    margin-left: 4px;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    justify-self: start;
+    align-self: start;
+    /* estilo */
+    font: normal 15px "Raleway", sans-serif;
+    letter-spacing: 3px;
+}
