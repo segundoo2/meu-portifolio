@@ -93,9 +93,10 @@ nav li {
     align-self: end;
     /* estilo */
     font: normal 60px "Prosto+One", sans-serif;
-    letter-spacing: 3px;
+    letter-spacing: 4px;
     text-align: start;
     vertical-align: bottom;
+    word-spacing: -20px;
     
 }
 
@@ -104,7 +105,6 @@ nav li {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    
 }
 
 #web {
@@ -120,7 +120,8 @@ nav li {
 .inicial p {
     /* posicionamento e alinhamento */
     margin: 0px;
-    margin-left: 4px;
+    margin-left: 6px;
+    margin-top: -10px;
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     justify-self: start;
@@ -128,4 +129,21 @@ nav li {
     /* estilo */
     font: normal 15px "Raleway", sans-serif;
     letter-spacing: 3px;
+}
+
+.bt-curriculo {
+    /* posicionamento */
+    display: flex;
+    margin: auto;
+    margin-top: -50px;
+    height: 40px;
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+    /* estilo */
+    border: none;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.142);
+    font: normal 20px "K2D", sans-serif;
+
 }
