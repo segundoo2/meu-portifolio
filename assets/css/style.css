@@ -19,10 +19,7 @@ html {
 /* config background */
 body {
     height: auto;
-    background: url(../image/background-formas/triangulos-background-alpha.png), url(../image/background-formas/quadrado-background-alpha.png), linear-gradient(to top, #000000, #080002, #0f0006, #14000a, #18000e);
-    background-repeat: no-repeat;
-    background-position: right bottom, left top;
-    background-origin: content-box;
+    background: url(../image/background-formas/triangulos-background-alpha.png) no-repeat right bottom, url(../image/background-formas/quadrado-background-alpha.png) no-repeat left top, linear-gradient(to top, #000000, #080002, #0f0006, #14000a, #18000e);
 
 }
 /* config header */
@@ -162,7 +159,7 @@ ul {
 /* section inicial */
 #sobre-mim {
     margin: auto;
-    padding-top: 160px;
+    padding-top: 150px;
     padding-bottom: 160px;
     display: grid;
     grid-template-columns: 100%;
@@ -172,24 +169,26 @@ ul {
     /* estilos */
     text-align: justify;
     font: 600 italic 25px "raleway", sans-serif;
+    letter-spacing: 3px;
 }
 
 #sobre-mim h1 {
     /* posicionamento e tamanho */
-    margin: 10px;
-    padding-left: 14%;
+    margin: 0;
+    padding: 0% 15% 0% 15%;
     justify-self: start;
     /* estilo */
     background-image: linear-gradient(to left, #5B0BAD, #E4118F);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font: normal 50px "Prosto+One", sans-serif;
+    font: normal 40px "Prosto+One", sans-serif;
     letter-spacing: 4px;
     text-align: start;
 }
 
 #sobre-mim p {
+    margin: 5px 0 5px 0;
     padding: 0% 15% 0% 15%;
 }
 
