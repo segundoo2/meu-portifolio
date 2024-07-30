@@ -205,7 +205,7 @@ ul {
     display: grid;
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(6, auto);
-    gap: 90px 50px;
+    gap: 50px 50px;
     /* estilos */
     text-align: start;
     font: 600 normal 15px "Prosto One", sans-serif;
