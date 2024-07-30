@@ -20,6 +20,7 @@ html {
 body {
     height: auto;
     background: url(../image/background-formas/triangulos-background-alpha.png) no-repeat right bottom, url(../image/background-formas/quadrado-background-alpha.png) no-repeat left top, linear-gradient(to top, #000000, #080002, #0f0006, #14000a, #18000e);
+    background-origin: content-box;
 
 }
 /* config header */
@@ -156,11 +157,10 @@ ul {
 
 }
 /* ---------------------------------------------------- */
-/* section inicial */
+/* section sobre mim */
 #sobre-mim {
     margin: auto;
-    padding-top: 150px;
-    padding-bottom: 160px;
+    padding-top: 85px;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: repeat(2, auto);
@@ -190,6 +190,10 @@ ul {
 #sobre-mim p {
     margin: 5px 0 5px 0;
     padding: 0% 15% 0% 15%;
+}
+
+.scroll1 {
+    margin-top: 5px;
 }
 
 
