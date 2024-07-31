@@ -162,7 +162,8 @@ ul {
 /* section sobre mim */
 #sobre-mim {
     margin: auto;
-    padding-top: 85px;
+    padding-top: 200px;
+    padding-bottom: 200px;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: repeat(2, auto);
@@ -196,16 +197,17 @@ ul {
 #scroll-sobre {
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    margin-bottom: 500px;
 }
 /* ---------------------------------------------------- */
 /* section habilidades */
 #habilidades {
-    padding-top: 85px;
+    padding-top: 190px;
+    padding-bottom: 200px;
     display: grid;
     grid-template-columns: repeat(2, auto);
-    grid-template-rows: repeat(6, auto);
-    gap: 90px 50px;
+    grid-template-rows: repeat(7, auto);
+    gap: 50px 50px;
     /* estilos */
     text-align: start;
     font: 600 normal 15px "Prosto One", sans-serif;
@@ -213,13 +215,11 @@ ul {
     
 }
 
-#habilidades h1 {
+#title-tech {
     /* posicionamento e tamanho */
     margin: 0;
-    justify-self: center;
     grid-column: 1/3;
     grid-row: 1/2;
-    justify-self: start;
     margin-left: 110px;
     /* estilo */
     background-image: linear-gradient(to top, #5B0BAD, #E4118F);
@@ -248,7 +248,7 @@ ul {
     margin-right: 50px;
 }
 
-.tech-paragrafo {
+.paragrafo {
     margin: 0;
     margin-left: 30px;
 }
@@ -272,4 +272,64 @@ ul {
 #sql {
     grid-column: 2/3;
     grid-row: 3/4;
+}
+#php {
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+#c {
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+
+#node {
+    grid-column: 2/1;
+    grid-row: 5/6;
+}
+
+#node p {
+    margin-top: 20px;
+}
+/* ---------------------------------------- */
+/* section ferramentas */
+#title-ferramentas {
+    margin: 0;
+    grid-column: 1/3;
+    grid-row: 6/7;
+    margin-left: 110px;
+    /* estilo */
+    background-image: linear-gradient(to top, #5B0BAD, #E4118F);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font: normal 40px "Prosto One", sans-serif;
+    letter-spacing: 4px;
+}
+
+.ferramentas-left {
+    display: inline-flex;
+    margin: 0;
+    margin-left: 50px;
+}
+
+.ferramentas-right {
+    display: inline-flex;
+    margin: 0;
+    margin-right: 50px;
+}
+
+#git {
+    grid-column: 1/2;
+    grid-row: 7/8;
+}
+
+#figma {
+    grid-column: 2/3;
+    grid-row: 7/8;
+}
+
+#scroll-habilidades {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
 }
