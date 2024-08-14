@@ -42,6 +42,14 @@ header nav {
     list-style: none;
 }
 
+.efeito-menu {
+    transition: transform 0.5s ease;
+}
+
+.efeito-menu:hover {
+    transform: scale(1.1);
+}
+
 header h1 {
     margin-left: 50px;
     justify-content: flex-start;
@@ -119,6 +127,7 @@ ul {
     /* posicionamento e alinhamento */
     vertical-align: 50%;
     text-align: start;
+    margin-left: -15px;
 }
 
 #inicial p {
@@ -140,6 +149,7 @@ ul {
     display: flex;
     margin: auto;
     margin-top: -50px;
+    padding: 5px 20px 5px 20px;
     height: 40px;
     width: 200px;
     align-items: center;
@@ -149,14 +159,23 @@ ul {
     border-radius: 50px;
     background-color: rgba(255, 255, 255, 0.142);
     font: normal 20px "K2D", sans-serif;
+    /* efeito */
+    transition: transform 0.5s ease;
+}
 
+.bt-curriculo:hover {
+    transform: scale(1.1);
 }
 
 #scroll-inicial {
     display: flex;
     justify-content: center;
     margin-top: 90px;
+    transition: transform 0.5s ease;
+}
 
+#scroll-inicial:hover {
+    transform: scale(1.1);
 }
 /* ---------------------------------------------------- */
 /* section sobre mim */
@@ -197,17 +216,21 @@ ul {
 #scroll-sobre {
     display: flex;
     justify-content: center;
-    margin-bottom: 500px;
+    transition: transform 0.5s ease;
+}
+
+#scroll-sobre:hover {
+    transform: scale(1.1);
 }
 /* ---------------------------------------------------- */
 /* section habilidades */
 #habilidades {
-    padding-top: 190px;
-    padding-bottom: 200px;
     display: grid;
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(7, auto);
     gap: 50px 50px;
+    padding-top: 200px;
+    padding-bottom: 200px;
     /* estilos */
     text-align: start;
     font: 600 normal 15px "Prosto One", sans-serif;
@@ -332,4 +355,105 @@ ul {
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
+    transition: transform 0.5s ease;
+}
+
+#scroll-habilidades:hover {
+    transform: scale(1.1);
+}
+/* ---------------------------------------- */
+/* section projetos */
+#projetos {
+    padding: 50px;
+    margin-bottom: 30px;
+    padding-top: 200px;
+    
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+    justify-content: space-around;
+}
+
+#title-projetos {
+    background-image: linear-gradient(to right, #5B0BAD, #E4118F);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font: normal 40px "Prosto One", sans-serif;
+    letter-spacing: 4px;
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+
+.img-projetos {
+    height: 200px;
+    width: 200px;
+    border-radius: 5px;
+}
+
+#primeiralandingpage {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+#calculadoraimc {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+#terceiro-projeto {
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.box-projetos {
+    margin-top: 50px;
+    padding: 10px 20px 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.051);
+    width: 300px;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+}
+.box-projetos:hover {
+    transform: scale(1.1);
+}
+
+.box-projetos h2 {
+    font: normal 20px "Prosto One", sans-serif;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+.box-projetos a {
+    margin: 20px 30px 30px;
+    background-color: #E4118F;
+    border-radius: 100px;
+    padding: 7px 50px 7px 50px;
+    font: normal 16px "K2D", sans-serif;
+    letter-spacing: 4px;
+}
+
+#tech-projetos img {
+    display: inline-flex;
+    justify-content: space-around;
+    height: 40px;
+    width: 40px;
+    margin-top: 20px;
+}
+
+#scroll-projetos {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    padding-bottom: 200px;
+    transition: transform 0.5s ease;
+}
+
+#scroll-projetos:hover {
+    transform: scale(1.1);
 }
