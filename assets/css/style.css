@@ -457,3 +457,10 @@ ul {
 #scroll-projetos:hover {
     transform: scale(1.1);
 }
+
+#contatos {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(6, auto);
+    font: normal 25px "prosto-One", sans-serif;
+}
