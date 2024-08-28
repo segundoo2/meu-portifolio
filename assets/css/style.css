@@ -6,17 +6,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Prosto+One&display=swap');
 /* import raleway */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-
-/* config globais */
 * {
     color: white;
     text-decoration: none;
 }
-/* config rolagem */
 html {
     scroll-behavior: smooth;
 }
-/* config background */
 body {
     height: auto;
     margin: 0;
@@ -25,15 +21,12 @@ body {
     background-origin: content-box;
 
 }
-/* config header */
 header {
     width: 100%;
     height: 50px;
     position: fixed;
     top: 0;
 }
-/* config nav */
-
 header nav {
     display: inline-flex;
     width:100%;
@@ -41,7 +34,6 @@ header nav {
     align-items: center;
     list-style: none;
 }
-
 .efeito-menu {
     transition: transform 0.5s ease;
 }
@@ -49,14 +41,12 @@ header nav {
 .efeito-menu:hover {
     transform: scale(1.1);
 }
-
 header h1 {
     margin-left: 50px;
     justify-content: flex-start;
     align-items: center;
     font: normal 20px "K2D", sans-serif;
 }
-
 ul {
     display: inline-flex;
     justify-content: space-around;
@@ -65,12 +55,9 @@ ul {
     font: italic bold 18px "Kalam", sans-serif;
     list-style: none;
 }
-
 .nav-tag {
     color: #E4118F;
 }
-/* ---------------------------------------------------- */
-/* section inicial */
 #inicial {
     height: 100%;
     width: 100%;
@@ -85,19 +72,14 @@ ul {
     height: 100%;
     
 }
-
 #inicial img {
-    /* estilo */
     clip-path: circle();
-    /* posicionamento */
     grid-column: 1 / 2;
     grid-row: 1 / 3;
     justify-self: end;
     align-self: center;
 }
-
 #inicial h1 {
-    /* posicionamento e tamanho */
     margin: 0px;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
@@ -111,27 +93,21 @@ ul {
     word-spacing: -20px;
     
 }
-
 #desenvolvedor {
     background-image: linear-gradient(to right, #5B0BAD, #E4118F);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
 #web {
-    /* estilo */
     color: #D5ACFF;
     font-size: 30px;
     font-weight: bold;
-    /* posicionamento e alinhamento */
     vertical-align: 50%;
     text-align: start;
     margin-left: -10px;
 }
-
 #inicial p {
-    /* posicionamento e alinhamento */
     margin: 0px;
     margin-left: 6px;
     margin-top: -10px;
@@ -139,13 +115,10 @@ ul {
     grid-row: 2 / 3;
     justify-self: start;
     align-self: start;
-    /* estilo */
     font: normal 15px "Raleway", sans-serif;
     letter-spacing: 3px;
 }
-
 .bt-curriculo {
-    /* posicionamento */
     display: flex;
     margin: auto;
     margin-top: -50px;
@@ -154,52 +127,41 @@ ul {
     width: 200px;
     align-items: center;
     justify-content: center;
-    /* estilo */
     border: none;
     border-radius: 50px;
     background-color: rgba(255, 255, 255, 0.142);
     font: normal 20px "K2D", sans-serif;
-    /* efeito */
     transition: transform 0.5s ease;
 }
-
 .bt-curriculo:hover {
     transform: scale(1.1);
 }
-
-#scroll-inicial {
-    display: flex;
-    justify-content: center;
+.scroll {
+    display: inline-block;
     margin-top: 90px;
+    margin-left: 45%;
+    padding: auto;
     transition: transform 0.5s ease;
 }
-
-#scroll-inicial:hover {
+.scroll:hover {
     transform: scale(1.1);
 }
-/* ---------------------------------------------------- */
-/* section sobre mim */
 #sobre-mim {
     margin: auto;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 100px;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: repeat(2, auto);
     justify-items: center;
     align-items: center;
-    /* estilos */
     text-align: justify;
     font: 600 italic 25px "Prosto One", sans-serif;
     letter-spacing: 3px;
 }
-
 #sobre-mim h1 {
-    /* posicionamento e tamanho */
     margin: 0;
     padding: 0% 15% 0% 15%;
     justify-self: start;
-    /* estilo */
     background-image: linear-gradient(to top, #5B0BAD, #E4118F);
     background-clip: text;
     -webkit-background-clip: text;
@@ -207,44 +169,39 @@ ul {
     font: normal 40px "Prosto One", sans-serif;
     letter-spacing: 4px;
 }
-
 #sobre-mim p {
     margin: 5px 0 5px 0;
-    padding: 0% 15% 0% 15%;
+    padding: 0% 15% 4% 15%;
 }
-
+#link-projetos {
+    font-style: normal;
+    color: #E4118F;
+}
 #scroll-sobre {
     display: flex;
     justify-content: center;
     transition: transform 0.5s ease;
 }
-
 #scroll-sobre:hover {
     transform: scale(1.1);
 }
-/* ---------------------------------------------------- */
-/* section habilidades */
 #habilidades {
     display: grid;
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(7, auto);
     gap: 50px 50px;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 100px;
     /* estilos */
     text-align: start;
     font: 600 normal 15px "Prosto One", sans-serif;
     letter-spacing: 3px;
     
 }
-
 #title-tech {
-    /* posicionamento e tamanho */
     margin: 0;
     grid-column: 1/3;
     grid-row: 1/2;
     margin-left: 110px;
-    /* estilo */
     background-image: linear-gradient(to top, #5B0BAD, #E4118F);
     background-clip: text;
     -webkit-background-clip: text;
@@ -252,46 +209,38 @@ ul {
     font: normal 40px "Prosto One", sans-serif;
     letter-spacing: 4px;
 }
-
 #habilidades img {
     height: 70px;
     width: 70px;
     align-items: center;
 }
-
 .tech-left {
     display: inline-flex;
     margin: 0;
     margin-left: 50px;
 }
-
 .tech-right {
     display: inline-flex;
     margin: 0;
     margin-right: 50px;
 }
-
 .paragrafo {
     margin: 0;
     margin-left: 30px;
 }
-
 #html {
     grid-column: 1/2;
     grid-row: 2/3;
 }
-
 #css {
     grid-column: 2/3;
     grid-row: 2/3;
 }
-
 #js {
     grid-column: 1/2;
     grid-row: 3/4;
     
 }
-
 #sql {
     grid-column: 2/3;
     grid-row: 3/4;
@@ -304,23 +253,18 @@ ul {
     grid-column: 2/3;
     grid-row: 4/5;
 }
-
 #node {
     grid-column: 2/1;
     grid-row: 5/6;
 }
-
 #node p {
     margin-top: 20px;
 }
-/* ---------------------------------------- */
-/* section ferramentas */
 #title-ferramentas {
     margin: 0;
     grid-column: 1/3;
     grid-row: 6/7;
     margin-left: 110px;
-    /* estilo */
     background-image: linear-gradient(to top, #5B0BAD, #E4118F);
     background-clip: text;
     -webkit-background-clip: text;
@@ -328,52 +272,43 @@ ul {
     font: normal 40px "Prosto One", sans-serif;
     letter-spacing: 4px;
 }
-
 .ferramentas-left {
     display: inline-flex;
     margin: 0;
     margin-left: 50px;
 }
-
 .ferramentas-right {
     display: inline-flex;
     margin: 0;
     margin-right: 50px;
 }
-
 #git {
     grid-column: 1/2;
     grid-row: 7/8;
 }
-
 #figma {
     grid-column: 2/3;
     grid-row: 7/8;
 }
-
 #scroll-habilidades {
     display: flex;
     justify-content: center;
+    margin-top: 10%;
     margin-bottom: 30px;
     transition: transform 0.5s ease;
 }
-
 #scroll-habilidades:hover {
     transform: scale(1.1);
 }
-/* ---------------------------------------- */
-/* section projetos */
 #projetos {
     padding: 50px;
     margin-bottom: 30px;
-    padding-top: 200px;
-    
+    padding-top: 100px;    
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(2, auto);
     justify-content: space-around;
 }
-
 #title-projetos {
     background-image: linear-gradient(to right, #5B0BAD, #E4118F);
     background-clip: text;
@@ -384,28 +319,23 @@ ul {
     grid-column: 1/3;
     grid-row: 1/2;
 }
-
 .img-projetos {
     height: 200px;
     width: 200px;
     border-radius: 5px;
 }
-
 #primeiralandingpage {
     grid-column: 1/2;
     grid-row: 2/3;
 }
-
 #calculadoraimc {
     grid-column: 2/3;
     grid-row: 2/3;
 }
-
 #terceiro-projeto {
     grid-column: 3/4;
     grid-row: 2/3;
 }
-
 .box-projetos {
     margin-top: 50px;
     padding: 10px 20px 10px 20px;
@@ -422,13 +352,11 @@ ul {
 .box-projetos:hover {
     transform: scale(1.1);
 }
-
 .box-projetos h2 {
     font: normal 20px "Prosto One", sans-serif;
     letter-spacing: 4px;
     text-align: center;
 }
-
 .box-projetos a {
     margin: 20px 30px 30px;
     background-color: #E4118F;
@@ -437,7 +365,6 @@ ul {
     font: normal 16px "K2D", sans-serif;
     letter-spacing: 4px;
 }
-
 #tech-projetos img {
     display: inline-flex;
     justify-content: space-around;
@@ -445,36 +372,31 @@ ul {
     width: 40px;
     margin-top: 20px;
 }
-
 #scroll-projetos {
     display: flex;
     justify-content: center;
     transition: transform 0.5s ease;
 }
-
 #scroll-projetos:hover {
     transform: scale(1.1);
 }
-
 #contatos {
     display: grid;
-    grid-template-columns: repeat(2, 350px);
+    grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(6, auto);
     gap: 15px 10px;
     justify-content: center;
     align-items: center;
-    margin-right: 300px;
     padding-top: 100px;
-    padding-bottom: 200px;
+    padding-bottom: 100px;
     font: normal 25px "prosto-One", sans-serif;
 }
-
 #contatos h1 {
     margin: 0;
+    margin-right: 300px;
     grid-column: 1/3;
     grid-row: 1/2;
     justify-self: center;
-    /* estilo */
     background-image: linear-gradient(to top right, #5B0BAD, #E4118F 80%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -482,13 +404,10 @@ ul {
     font-size: 40px;
     letter-spacing: 4px;
 }
-
 #contatos img {
     height: 50px;
     width: 50px;
 }
-
-
 #contatos span {
     vertical-align: 50%;
 }
@@ -503,65 +422,52 @@ ul {
     margin: 0;
     margin-top: 5px;
 }
-
 #telefone-img {
     grid-column: 1/2;
     grid-row: 2/3;
 }
-
-
 #telefone-text {
     grid-column: 2/3;
     grid-row: 2/3;
     
 }
-
 #email-img {
     grid-column: 1/2;
     grid-row: 3/4;
 }
-
 #email-text {
     grid-column: 2/3;
     grid-row: 3/4;
     
 }
-
 #linkedin-img {
     grid-column: 1/2;
     grid-row: 4/5;
     
 }
-
 #linkedin-text {
     grid-column: 2/3;
     grid-row: 4/5;
 }
-
 #github-img {
     grid-column: 1/2;
     grid-row: 5/6;
 }
-
 #github-text {
     grid-column: 2/3;
     grid-row: 5/6;
 }
-
 #instagram-img {
     grid-column: 1/2;
     grid-row: 6/7;
 }
-
 #instagram-text {
     grid-column: 2/2;
     grid-row: 6/7;
 }
-
 footer {
     margin-top: 0px;
 }
-
 #creditos {
     margin-top: 35px;
     margin-bottom: 80px;
