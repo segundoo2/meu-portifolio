@@ -85,7 +85,6 @@ ul {
     grid-row: 1 / 2;
     justify-self: start;
     align-self: end;
-    /* estilo */
     font: normal 60px "Prosto One", sans-serif;
     letter-spacing: 4px;
     text-align: start;
@@ -176,14 +175,6 @@ ul {
 #link-projetos {
     font-style: normal;
     color: #E4118F;
-}
-#scroll-sobre {
-    display: flex;
-    justify-content: center;
-    transition: transform 0.5s ease;
-}
-#scroll-sobre:hover {
-    transform: scale(1.1);
 }
 #habilidades {
     display: grid;
@@ -290,16 +281,6 @@ ul {
     grid-column: 2/3;
     grid-row: 7/8;
 }
-#scroll-habilidades {
-    display: flex;
-    justify-content: center;
-    margin-top: 10%;
-    margin-bottom: 30px;
-    transition: transform 0.5s ease;
-}
-#scroll-habilidades:hover {
-    transform: scale(1.1);
-}
 #projetos {
     padding: 50px;
     margin-bottom: 30px;
@@ -337,7 +318,6 @@ ul {
     grid-row: 2/3;
 }
 .box-projetos {
-    margin-top: 50px;
     padding: 10px 20px 10px 20px;
     display: flex;
     align-items: center;
@@ -371,14 +351,6 @@ ul {
     height: 40px;
     width: 40px;
     margin-top: 20px;
-}
-#scroll-projetos {
-    display: flex;
-    justify-content: center;
-    transition: transform 0.5s ease;
-}
-#scroll-projetos:hover {
-    transform: scale(1.1);
 }
 #contatos {
     display: grid;
